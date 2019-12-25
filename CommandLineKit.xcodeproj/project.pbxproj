@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2DA32123B3B69000194763 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AE0207A640700EDDADD /* Flag.swift */; };
+		3A2DA32223B3B69000194763 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AE2207A662F00EDDADD /* Flags.swift */; };
+		3A2DA32323B3B69000194763 /* FlagError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AE4207A693000EDDADD /* FlagError.swift */; };
+		3A2DA32423B3B69000194763 /* ConvertibleFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AE6207A695B00EDDADD /* ConvertibleFromString.swift */; };
+		3A2DA32523B3B69000194763 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23248F208945B8007D582B /* Terminal.swift */; };
+		3A2DA32623B3B69000194763 /* TextProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23248B2087E6EB007D582B /* TextProperties.swift */; };
+		3A2DA32723B3B69000194763 /* TextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AFF207A6B1000EDDADD /* TextColor.swift */; };
+		3A2DA32823B3B69000194763 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2324872087D9E4007D582B /* TextStyle.swift */; };
+		3A2DA32923B3B69000194763 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2324892087DA70007D582B /* BackgroundColor.swift */; };
+		3A2DA32A23B3B69000194763 /* LineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AFB207A6ACA00EDDADD /* LineReader.swift */; };
+		3A2DA32B23B3B69000194763 /* LineReaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AFD207A6AF100EDDADD /* LineReaderError.swift */; };
+		3A2DA32C23B3B69000194763 /* LineReaderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2B01207A6B2C00EDDADD /* LineReaderHistory.swift */; };
+		3A2DA32D23B3B69000194763 /* EditState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2B03207A6B4100EDDADD /* EditState.swift */; };
+		3A2DA32E23B3B69000194763 /* AnsiCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2B05207A6B6700EDDADD /* AnsiCodes.swift */; };
+		3A2DA32F23B3B69000194763 /* ControlCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC2AF9207A6AAE00EDDADD /* ControlCharacters.swift */; };
+		3A2DA33023B3B6B100194763 /* CommandLineKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFC2AD5207A636B00EDDADD /* CommandLineKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC2324882087D9E4007D582B /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2324872087D9E4007D582B /* TextStyle.swift */; };
 		CC23248A2087DA70007D582B /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2324892087DA70007D582B /* BackgroundColor.swift */; };
 		CC23248C2087E6EB007D582B /* TextProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23248B2087E6EB007D582B /* TextProperties.swift */; };
@@ -65,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A2DA31823B3B66F00194763 /* libCommandLineKitLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommandLineKitLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2324872087D9E4007D582B /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		CC2324892087DA70007D582B /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 		CC23248B2087E6EB007D582B /* TextProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProperties.swift; sourceTree = "<group>"; };
@@ -101,6 +118,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A2DA31623B3B66F00194763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC7A60E5207A62A5007376A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +171,7 @@
 				CC7A60E7207A62A5007376A0 /* CommandLineKitDemo.app */,
 				CCFC2AD3207A636B00EDDADD /* CommandLineKit.framework */,
 				CCFC2AEC207A69B900EDDADD /* CommandLineKitTests.xctest */,
+				3A2DA31823B3B66F00194763 /* libCommandLineKitLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +229,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3A2DA31423B3B66F00194763 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2DA33023B3B6B100194763 /* CommandLineKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCFC2AD0207A636B00EDDADD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +248,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3A2DA31723B3B66F00194763 /* CommandLineKitLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2DA32023B3B66F00194763 /* Build configuration list for PBXNativeTarget "CommandLineKitLib" */;
+			buildPhases = (
+				3A2DA31423B3B66F00194763 /* Headers */,
+				3A2DA31523B3B66F00194763 /* Sources */,
+				3A2DA31623B3B66F00194763 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandLineKitLib;
+			productName = CommandLineKitLib;
+			productReference = 3A2DA31823B3B66F00194763 /* libCommandLineKitLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		CC7A60E6207A62A5007376A0 /* CommandLineKitDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC7A60EF207A62A5007376A0 /* Build configuration list for PBXNativeTarget "CommandLineKitDemo" */;
@@ -276,9 +326,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Matthias Zenger";
 				TargetAttributes = {
+					3A2DA31723B3B66F00194763 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					CC7A60E6207A62A5007376A0 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 1100;
@@ -309,6 +362,7 @@
 				CCFC2AD2207A636B00EDDADD /* CommandLineKit */,
 				CCFC2AEB207A69B900EDDADD /* CommandLineKitTests */,
 				CC7A60E6207A62A5007376A0 /* CommandLineKitDemo */,
+				3A2DA31723B3B66F00194763 /* CommandLineKitLib */,
 			);
 		};
 /* End PBXProject section */
@@ -331,6 +385,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A2DA31523B3B66F00194763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2DA32123B3B69000194763 /* Flag.swift in Sources */,
+				3A2DA32223B3B69000194763 /* Flags.swift in Sources */,
+				3A2DA32323B3B69000194763 /* FlagError.swift in Sources */,
+				3A2DA32423B3B69000194763 /* ConvertibleFromString.swift in Sources */,
+				3A2DA32523B3B69000194763 /* Terminal.swift in Sources */,
+				3A2DA32623B3B69000194763 /* TextProperties.swift in Sources */,
+				3A2DA32723B3B69000194763 /* TextColor.swift in Sources */,
+				3A2DA32823B3B69000194763 /* TextStyle.swift in Sources */,
+				3A2DA32923B3B69000194763 /* BackgroundColor.swift in Sources */,
+				3A2DA32A23B3B69000194763 /* LineReader.swift in Sources */,
+				3A2DA32B23B3B69000194763 /* LineReaderError.swift in Sources */,
+				3A2DA32C23B3B69000194763 /* LineReaderHistory.swift in Sources */,
+				3A2DA32D23B3B69000194763 /* EditState.swift in Sources */,
+				3A2DA32E23B3B69000194763 /* AnsiCodes.swift in Sources */,
+				3A2DA32F23B3B69000194763 /* ControlCharacters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC7A60E4207A62A5007376A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +464,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3A2DA31E23B3B66F00194763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9Y5J39HS8;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3A2DA31F23B3B66F00194763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9Y5J39HS8;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		CC7A60ED207A62A5007376A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C72Z63N8M5;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/CommandLineKitDemo/Info.plist";
@@ -512,6 +630,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C72Z63N8M5;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/CommandLineKitDemo/Info.plist";
@@ -703,6 +822,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A2DA32023B3B66F00194763 /* Build configuration list for PBXNativeTarget "CommandLineKitLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2DA31E23B3B66F00194763 /* Debug */,
+				3A2DA31F23B3B66F00194763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CC7A60E3207A62A5007376A0 /* Build configuration list for PBXProject "CommandLineKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
